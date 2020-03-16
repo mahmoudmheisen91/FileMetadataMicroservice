@@ -4,6 +4,9 @@ let express = require("express");
 let cors = require("cors");
 
 // require and use "multer"...
+let multer = require("multer");
+let storage = multer.memoryStorage();
+let upload = multer({ storage: storage });
 
 let app = express();
 app.use(cors());
@@ -19,6 +22,18 @@ app.get("/", function(req, res) {
 // Greeting endpoint...
 app.get("/hello", function(req, res) {
   res.json({ greetings: "Hello, API" });
+});
+
+// File Analyze:
+app.post("/api/fileanalyse", upload.single("file"), (req, res, next) => {
+  let obj = {
+    name: req.file.originalname,
+    type: req.file.mimetype,
+    size: req.file.size
+  };
+
+  res.json(obj);
+  next();
 });
 
 // Listen for requests :)
