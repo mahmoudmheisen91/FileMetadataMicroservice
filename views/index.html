@@ -36,9 +36,14 @@
       <strong>FreeCodeCamp APIs and Microservices Course, Project 5</strong>
     </header>
 
-    <form method="POST" action="/submit-form" class="container">
-      <label for="upload">Select File to upload:</label> <br />
-      <input id="upload" type="file" value="Choose File" />
+    <form
+      action="/api/fileanalyse"
+      method="POST"
+      enctype="multipart/form-data"
+      class="container"
+    >
+      <label for="file">Select File to upload:</label> <br />
+      <input id="file" name="file" type="file" value="Choose File" />
       <input id="submit" type="submit" value="Upload and Query Metadata" />
     </form>
 

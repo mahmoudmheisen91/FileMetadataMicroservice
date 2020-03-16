@@ -46,7 +46,7 @@ form > label {
   margin: 5px 0px;
 }
 
-form > #upload {
+form > #file {
   grid-column: 3 / span 1;
   grid-row: 1 / span 1;
   margin: 5px 0px;
