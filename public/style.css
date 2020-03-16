@@ -1,0 +1,85 @@
+/* Setup */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+  margin-top: 40px;
+}
+
+header {
+  /* border: 1px solid black; */
+  text-align: center;
+  margin: 0 80px;
+  font-size: larger;
+  font-weight: 400;
+}
+
+header > strong {
+  font-weight: 900;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Start Form Styling */
+.container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 30% 15% 25% 30%;
+  grid-template-rows: auto;
+}
+
+form > label {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+form > #upload {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  margin: 5px 0px;
+}
+
+form > #submit {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form > #submit:hover {
+  background-color: #45a049;
+}
+/* End Form Styling */
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+code {
+  font-family: monospace;
+  padding: 2px;
+}
+
+a:visited {
+  color: black;
+}

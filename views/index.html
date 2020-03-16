@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Mahmoud Mheisen" />
+    <meta name="description" content="FCC Course 5 Project 5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- CSS Links -->
+    <link type="text/css" rel="stylesheet" href="style.css" />
+
+    <!-- Title -->
+    <title>File Metadata Microservice</title>
+
+    <!-- Icon -->
+    <link
+      type="image/x-icon"
+      rel="shortcut icon"
+      href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico"
+    />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <strong>File Metadata Microservice</strong>
+      is a NodeJS Microservice that allow the client to upload a file, server
+      respond with a JSON object containing the file metadate, done for
+      <strong>FreeCodeCamp APIs and Microservices Course, Project 5</strong>
+    </header>
+
+    <form method="POST" action="/submit-form" class="container">
+      <label for="upload">Select File to upload:</label> <br />
+      <input id="upload" type="file" value="Choose File" />
+      <input id="submit" type="submit" value="Upload and Query Metadata" />
+    </form>
+
+    <footer>
+      &copy; 2020 Mahmoud Mheisen
+    </footer>
+  </body>
+</html>
